@@ -1,0 +1,98 @@
+{
+  "projectType": "saas",
+  "projectName": "SICA",
+  "projectDescription": "Sistema Integral de Control Académico - Academic management system for institutions to manage students, courses, competencies, and assessments",
+  "theme": "linden",
+  "primaryColor": "#1e40af",
+  "lightColor": "#3b82f6",
+  "darkColor": "#1e3a8a",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "configuration"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/user-management",
+              "features/academic-programs",
+              "features/course-management",
+              "features/enrollment",
+              "features/competency-tracking",
+              "features/assessments"
+            ]
+          },
+          {
+            "group": "User Guides",
+            "pages": [
+              "guides/admin-guide",
+              "guides/advisor-guide",
+              "guides/student-guide"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Technical Reference",
+        "groups": [
+          {
+            "group": "Architecture",
+            "pages": [
+              "technical/architecture-overview",
+              "technical/database-schema",
+              "technical/security"
+            ]
+          },
+          {
+            "group": "API Reference",
+            "pages": [
+              "api/authentication",
+              "api/users",
+              "api/courses",
+              "api/enrollments",
+              "api/competencies"
+            ]
+          },
+          {
+            "group": "Development",
+            "pages": [
+              "development/setup",
+              "development/codeigniter-structure",
+              "development/contributing"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multi-role user management (Admin, Advisor, Student)",
+    "Course and curriculum management",
+    "Student enrollment and matriculation",
+    "Competency-based assessment and tracking",
+    "Academic program administration",
+    "Email verification and authentication"
+  ],
+  "publicApiSurface": [
+    "UserController::login",
+    "UserController::logout",
+    "UserController::verify",
+    "RegistroController::create",
+    "Admin\\UsuarioController (CRUD operations)",
+    "Admin\\AsignaturaController (CRUD + attribute management)",
+    "Admin\\CarreraController (CRUD operations)",
+    "Admin\\CompetenciaController (CRUD + evaluation)",
+    "Admin\\GrupoController (CRUD + course assignments)",
+    "Admin\\MatriculacionController (enrollment management)",
+    "Asesor\\AsesorController::index",
+    "Estudiante\\EstudianteController::index"
+  ]
+}
